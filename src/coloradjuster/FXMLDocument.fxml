@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coloradjuster.FXMLDocumentController">
+   <children>
+      <ImageView fx:id="curImage" fitHeight="150.0" fitWidth="200.0" layoutX="105.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="fileName" alignment="CENTER" layoutX="10.0" layoutY="16.0" prefHeight="17.0" prefWidth="400.0" text="Koala.jpg">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Slider fx:id="brightSlider" layoutX="35.0" layoutY="428.0" majorTickUnit="1.0" max="10.0" min="-10.0" minorTickCount="5" prefHeight="14.0" prefWidth="344.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="170.0" layoutY="393.0" text="Brightness">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Slider fx:id="satSlider" layoutX="35.0" layoutY="351.0" majorTickUnit="1.0" max="10.0" min="-10.0" minorTickCount="5" prefHeight="14.0" prefWidth="344.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="169.0" layoutY="316.0" text="Saturation">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Slider fx:id="conSlider" layoutX="38.0" layoutY="514.0" majorTickUnit="1.0" max="10.0" min="-10.0" minorTickCount="5" prefHeight="14.0" prefWidth="344.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="177.0" layoutY="478.0" text="Contrast">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="button" layoutX="174.0" layoutY="566.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="24.0" prefWidth="72.0" text="Open">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Slider fx:id="hueSlider" layoutX="35.0" layoutY="264.0" majorTickUnit="1.0" max="10.0" min="-10.0" minorTickCount="5" prefHeight="14.0" prefWidth="344.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="192.0" layoutY="224.0" text="Hue">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
